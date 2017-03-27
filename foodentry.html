@@ -1,0 +1,112 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Food Entry</h1>
+    <form>
+      <fieldset>
+        <legend>General food description</legend>
+        <div>
+          <label for="foodName">Enter the food name </label>
+          <input type="text" required name="foodName" placeholder="Enter food name" id="FoodName">
+        </div>
+        <div>
+          <label for="foodImage">Load an image for the food</label>
+          <input type="file" name="foodImage" id="foodImage">
+        </div>
+        <div>
+          <label for="foodCalorie">Enter the Calorie of this food</label>
+          <input type="number" name="Foocalorie" required placeholder="Enter food Calorie here" id="foodCalorie">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Ingredients</legend>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>Ingredient Name</th><th>Amount</th><th>Unit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input type="text" name="ingredient1" placeholder="Ingredient Name">
+                </td>
+                <td>
+                  <input type="number" name="amount1" value="0">
+                </td>
+                <td>
+                  <select class="" name="unit1">
+                    <option value="tsp">tsp</option>
+                    <option value="tbsp">tbsp</option>
+                    <option value="cup">cup</option>
+                    <option value="gram">gram</option>
+                  </select>
+                </td>
+                <tr>
+                  <td>
+                    <input type="text" name="ingredient2" placeholder="Ingredient Name">
+                  </td>
+                  <td>
+                    <input type="number" name="amount2" value="0">
+                  </td>
+                  <td>
+                    <select class="" name="unit2">
+                      <option value="tsp">tsp</option>
+                      <option value="tbsp">tbsp</option>
+                      <option value="cup">cup</option>
+                      <option value="gram">gram</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" name="ingredient3" placeholder="Ingredient Name">
+                  </td>
+                  <td>
+                    <input type="number" name="amount3" value="0">
+                  </td>
+                  <td>
+                    <select class="" name="unit3">
+                      <option value="tsp">tsp</option>
+                      <option value="tbsp">tbsp</option>
+                      <option value="cup">cup</option>
+                      <option value="gram">gram</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" name="ingredient4" placeholder="Ingredient Name">
+                  </td>
+                  <td>
+                    <input type="number" name="amount4" value="0">
+                  </td>
+                  <td>
+                    <select class="" name="unit4">
+                      <option value="tsp">tsp</option>
+                      <option value="tbsp">tbsp</option>
+                      <option value="cup">cup</option>
+                      <option value="gram">gram</option>
+                    </select>
+                  </td>
+                </tr>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Coocking Instructions</legend>
+        <div class="">
+          <label for="coockingInst">Please enter cookcing instructions:</label><br>
+          <textarea name="coockingInst"  id="coockingInst" rows="4" cols="50">
+            To Make this food ...
+          </textarea>
+        </div>
+      </fieldset>
+      <input type="submit" name="" value="Submit">
+    </form>
+  </body>
+</html>
