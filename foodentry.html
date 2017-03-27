@@ -1,18 +1,54 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <title>Food Entry</title>
+
+    <style media="screen">
+      body {      text-align: left  ;
+      background-color: lightgray;
+      }
+      .center {align: center;
+      text-align: center;
+    padding: 5px}
+      #content{
+        max-width: 500px;
+        background-color: white;
+        border: 1px solid black;
+        margin: auto;
+        margin-top: 30px;
+
+      }
+      fieldset {
+        text-align: left;
+        padding: 10px;
+        border: 2px solid blue;
+        margin-top: 10px;
+      }
+      .submit{
+        margin: 10px;
+      }
+      textarea{width: 100%}
+      table {width: 100%;
+      text-align: center;}
+      label:hover {font-size: 26px}
+      img{max-width: 450px; padding: 10px;
+      max-height: 300px;}
+    </style>
   </head>
   <body>
+    <div class="center" id="content">
     <h1>Food Entry</h1>
     <form>
       <fieldset>
         <legend>General food description</legend>
         <div>
           <label for="foodName">Enter the food name </label>
-          <input type="text" required name="foodName" placeholder="Enter food name" id="FoodName">
+          <input type="text" required name="foodName" placeholder="Enter food name" id="foodName" autofocus>
         </div>
         <div>
           <label for="foodImage">Load an image for the food</label>
           <input type="file" name="foodImage" id="foodImage">
+          <br>Image Preview: <br><img src="" id="preview">
         </div>
         <div>
           <label for="foodCalorie">Enter the Calorie of this food</label>
@@ -101,12 +137,14 @@
         <legend>Coocking Instructions</legend>
         <div class="">
           <label for="coockingInst">Please enter cookcing instructions:</label><br>
-          <textarea name="coockingInst"  id="coockingInst" rows="4" cols="50">
+          <textarea name="coockingInst"  id="coockingInst" rows="4" cols="">
             To Make this food ...
           </textarea>
         </div>
       </fieldset>
-      <input type="submit" name="" value="Submit">
+      <input class="submit" type="submit" name="" value="Submit">
     </form>
+  </div>
+  <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
   </body>
 </html>
